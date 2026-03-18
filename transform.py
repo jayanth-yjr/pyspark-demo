@@ -13,3 +13,5 @@ df.show()
 df_filtered = df.filter(col("age") > 26)
 
 df_filtered.show()
+
+df_filtered.write.csv("output.csv", header=True)
